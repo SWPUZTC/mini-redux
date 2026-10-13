@@ -6,3 +6,4 @@ export type {
   Unsubscribe,
   Store,
 } from "./createStore";
+export { compose } from "./compose";
