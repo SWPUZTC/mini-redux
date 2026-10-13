@@ -1,4 +1,8 @@
-// @mini-redux/core - Redux core implementation
-// TODO: implement createStore, combineReducers, applyMiddleware, compose
-
-export {};
+export { createStore } from "./createStore";
+export type {
+  Action,
+  Reducer,
+  Dispatch,
+  Unsubscribe,
+  Store,
+} from "./createStore";
