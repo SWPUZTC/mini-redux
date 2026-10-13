@@ -7,3 +7,4 @@ export type {
   Store,
 } from "./createStore";
 export { compose } from "./compose";
+export { combineReducers } from "./combineReducers";
