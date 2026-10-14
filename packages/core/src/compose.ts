@@ -1,4 +1,4 @@
-type Function = (arg: any[]) => any;
+type Function = (...arg: any[]) => any;
 
 export function compose<R>(...funcs: Array<(arg: any) => R>): (arg: any) => R;
 export function compose(...funcs: Array<Function>): Function;
@@ -12,6 +12,6 @@ export function compose(...funcs: Array<Function>): Function {
   return funcs.reduce(
     (a, b) =>
       (...args: any[]) =>
-        a(b(args)),
+        a(b(...args)),
   );
 }

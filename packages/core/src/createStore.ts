@@ -56,7 +56,7 @@ export function createStore<S, A extends Action = Action>(
     // 防止在订阅函数中执行清理函数
     let isSubscribed = true;
     listeners.push(listener);
-    return function unsubcsribe() {
+    return function unsubscribe() {
       if (!isSubscribed) return;
       if (isDispatch) {
         throw new Error("当前还存在reducer未执行完毕");
