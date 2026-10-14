@@ -7,10 +7,22 @@
   "exports": {
     ".": "./src/index.ts"
   },
+  "scripts": {
+    "check": "bun check",
+    "test": "bun test"
+  },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0"
   },
   "dependencies": {
     "@mini-redux/core": "workspace:*"
+  },
+  "devDependencies": {
+    "@happy-dom/global-registrator": "^21.0.1",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19",
+    "happy-dom": "^21.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19"
   }
 }
