@@ -5,6 +5,13 @@
     "packages/*",
     "apps/*"
   ],
+  "scripts": {
+    "demo": "bun --filter @mini-redux/demo dev",
+    "demo:build": "bun --filter @mini-redux/demo build",
+    "demo:preview": "bun --filter @mini-redux/demo preview",
+    "check": "bun check",
+    "test": "bun test"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "typescript": "^7"
